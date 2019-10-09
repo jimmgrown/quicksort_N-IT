@@ -51,8 +51,8 @@ void quicksort_last(int *mas, int first, int last){
          mid=mas[(f+l) / 2];
      do
       {
-         while (mas[f]>mid) f++;
-         while (mas[l]<mid) l--;
+         while (mas[f]<mid) f++;
+         while (mas[l]>mid) l--;
          if (f<=l)
          {
             count=mas[f];
